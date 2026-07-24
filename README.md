@@ -1,12 +1,12 @@
 ## netflix-database1
 
-1. Provision the EC2 instance for MongoDB, backend and frontend
+## 1 Provision the EC2 instance for MongoDB, backend and frontend
    
    **N/B: For best practice use three different SGs for each instance*
    
 <img width="1275" height="429" alt="image" src="https://github.com/user-attachments/assets/c23ae7df-fe85-459f-836f-2e8576cde268" />
 
-2. Install MongoDB compass
+## 2 Install MongoDB compass
 Search for MongoDB database installation on ubuntu for a correct guide
 Go to install Mongo db community edition on ubuntu
 
@@ -241,11 +241,11 @@ js
 
 <img width="1292" height="275" alt="image" src="https://github.com/user-attachments/assets/6e3905e1-cf4d-463f-94b1-0fd29e9329ba" />
 
-##4 Now log in to mongoDB compass with your username and password credentials. Now you can see the databases and other information
+## 4 Now log in to mongoDB compass with your username and password credentials. Now you can see the databases and other information
 
 <img width="1352" height="713" alt="image" src="https://github.com/user-attachments/assets/257a09c2-3cba-471a-81b5-bee1768ef32b" />
 
-##5 Create your own database
+## 5 Create your own database
 
 **Correction: create a collection name called "movies" because that is what we have set up in our backend code*
 
