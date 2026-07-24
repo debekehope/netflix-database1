@@ -2,7 +2,7 @@
 
 ## 1 Provision the EC2 instance for MongoDB, backend and frontend
    
-   **N/B: For best practice use three different SGs for each instance*
+   *N/B: For best practice use three different SGs for each instance*
    
 <img width="1275" height="429" alt="image" src="https://github.com/user-attachments/assets/c23ae7df-fe85-459f-836f-2e8576cde268" />
 
@@ -90,7 +90,7 @@ We can see a configuration file
 ```
 sudo nano mongod.conf
 ```
-SO lets use Mobarxterm for the configuration. We log in to our database server with ssh key
+So lets use Mobarxterm for the configuration. We log in to our database server with ssh key
 
 **Open the configuration file and change the bind ip and the port number**
 
@@ -102,7 +102,7 @@ sudo nano /etc/ mongod.conf
 <img width="772" height="282" alt="image" src="https://github.com/user-attachments/assets/f2bfa2af-635b-4aae-b6bb-14dc1a60f34e" />
 
 
-**N/B: For best practice, set the bindIp in /etc/mongod.conf to the private IP of the database (not 0.0.0.0) so that it only listens on the internal network interface. That is: bindIp: 127.0.0.1,<private-IP-of-the-DB-server>*
+*N/B: For best practice, set the bindIp in /etc/mongod.conf to the private IP of the database (not 0.0.0.0) so that it only listens on the internal network interface. That is: bindIp: 127.0.0.1,<private-IP-of-the-DB-server>*
 
 127.0.0.1 — lets you connect locally on the server itself (useful for admin tasks, SSH tunneling, mongosh from the box).
 172.31.16.20 (or whatever the DB server's own private IP is) — lets it accept connections coming in over the private VPC network, which is how your backend server will reach it.
@@ -111,7 +111,7 @@ sudo nano /etc/ mongod.conf
 
 <img width="1354" height="315" alt="image" src="https://github.com/user-attachments/assets/e3b577ba-80cf-4b46-875b-6ee95cb25539" />
 
-**N/B: For best practice, do not open MongoDB's port (default 27017, or your custom port) to 0.0.0.0/0.*
+*N/B: For best practice, do not open MongoDB's port (default 27017, or your custom port) to 0.0.0.0/0.*
 
 **Restart your MongoDB**
 
@@ -248,7 +248,7 @@ js
 
 ## 5 Create your own database
 
-**Correction: create a collection name called "movies" because that is what we have set up in our backend code*
+*Correction: create a collection name called "movies" because that is what we have set up in our backend code*
 
 <img width="1352" height="713" alt="image" src="https://github.com/user-attachments/assets/ce639c92-0fed-4c18-8fd7-04b639169002" />
 
