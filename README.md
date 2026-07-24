@@ -82,6 +82,7 @@ cd /etc/
 ls -la | grep mongo 
 ```
 We can see a configuration file
+
 <img width="741" height="242" alt="image" src="https://github.com/user-attachments/assets/219edbd1-c35d-471d-81f2-94c9e4b9e642" />
 
 **To go into it, run:**
